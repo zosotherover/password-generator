@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <main id="wrapper">
+    <main class="container" id="wrapper">
         <header>
             <h1>Password Generator</h1>
         </header>
@@ -19,11 +19,12 @@
             <h2>Generate a Password</h2>
 
             <hr>
-            <textarea placeholder=" Your Password"></textarea>
+            <textarea readonly id="password" placeholder="Your Generated Password"
+                aria-label="Generated Password"></textarea>
             <hr>
 
             <div id="button">
-                <button>Generate Password</button>
+                <button id="generate">Generate Password</button>
             </div>
         </div>
     </main>
