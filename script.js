@@ -1,5 +1,5 @@
 
-// Create input variables characters: 
+// First create input variables characters: 
 
 var enter;
 var confirmNumber;
@@ -18,14 +18,13 @@ alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "
 space = [];
 
 
-// Put the choices variable outside the if statement for concatenating with a given condition. 
-
 var choices;
 
 // converts letters to uppercase 
 var toUpper = function (x) {
     return x.toUpperCase();
 };
+
 // var for Uppercase conversion: 
 
 alpha2 = alpha.map(toUpper);
@@ -36,8 +35,6 @@ get.addEventListener("click", function () {
     ps = generatePassword();
     document.getElementById("password").placeholder = ps;
 });
-
-
 
 
 // Password Generator Function: 
