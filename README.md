@@ -4,7 +4,9 @@ This is an application that generates a random password based on user-selected c
 
 # Links to the app
 
+https://github.com/zosotherover/password-generator
 
+https://zosotherover.github.io/password-generator/
 
 
 
