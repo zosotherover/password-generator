@@ -1,6 +1,4 @@
 
-// First create input variables characters: 
-
 var enter;
 var confirmNumber;
 var confirmCharacter;
@@ -17,7 +15,6 @@ alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "
 
 space = [];
 
-
 var choices;
 
 // converts letters to uppercase 
@@ -25,7 +22,7 @@ var toUpper = function (x) {
     return x.toUpperCase();
 };
 
-// var for Uppercase conversion: 
+//  for Uppercase conversion: 
 
 alpha2 = alpha.map(toUpper);
 
@@ -37,7 +34,7 @@ get.addEventListener("click", function () {
 });
 
 
-// Password Generator Function: 
+// Generator Function: 
 
 function generatePassword() {
 
@@ -57,19 +54,19 @@ function generatePassword() {
         confirmLowercase = confirm("Would you like your password to contain Lowercase letters?");
     };
 
-    // Else if for all negative choices: 
+    //for all negative choices: 
 
     if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
         choices = alert("You must choose a criteria!");
 
     }
 
-    // Else if for 4 positive options
+    //for 4 positive options
     else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
 
         choices = character.concat(number, alpha, alpha2);
     }
-    // Else if for 3 positive options
+    // for 3 positive options
     else if (confirmCharacter && confirmNumber && confirmUppercase) {
         choices = character.concat(number, alpha2);
     }
@@ -82,7 +79,7 @@ function generatePassword() {
     else if (confirmNumber && confirmLowercase && confirmUppercase) {
         choices = number.concat(alpha, alpha2);
     }
-    // Else if for 2 positive options 
+    // for 2 positive options 
     else if (confirmCharacter && confirmNumber) {
         choices = character.concat(number);
 
@@ -101,7 +98,7 @@ function generatePassword() {
     } else if (confirmNumber && confirmUppercase) {
         choices = number.concat(alpha2);
     }
-    // Else if for 1 positive option
+    //for 1 positive option
     else if (confirmCharacter) {
         choices = character;
     }
@@ -116,7 +113,7 @@ function generatePassword() {
         choices = space.concat(alpha2);
     };
 
-    // created a variable called password as an array placeholder for user inputed length value
+    // create a variable called password as an array placeholder for user inputed length value
     var password = [];
 
     // Start random selection variables:
@@ -136,4 +133,4 @@ function UserInput(ps) {
     document.getElementById("password").textContent = ps;
 
 }
-//I found MANY of these solutions from many hours of Google and YouTube research and chatting with classmates in the breakout rooms and still don't fully understand all of them.  I have a TON more to leaarn, but...it works!!!
+//Thank you to Google, YouTube, and my fellow classmates in the breakout rooms for all the help with this monster!
