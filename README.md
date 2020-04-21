@@ -10,7 +10,7 @@ https://zosotherover.github.io/password-generator/
 
 # Screen shot
 
-![screenshot](assets/photos/passwordScreenshot.PNG)
+<img src="assets/photos/passwordScreenshot.PNG">
 
 
 ## Acknowledgments
