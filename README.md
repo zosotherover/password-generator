@@ -8,10 +8,6 @@ https://github.com/zosotherover/password-generator
 
 https://zosotherover.github.io/password-generator/
 
-# Screen shot
-
-<img src="assets/photos/passwordScreenshot.PNG">
-
 
 ## Acknowledgments
 
